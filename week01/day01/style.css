@@ -1,0 +1,18 @@
+header{
+    background-color: grey;
+}
+
+html{
+    text-align: left;
+}
+.post1{
+    border: 1px solid black;
+}
+h1{
+    padding-left: 200px;
+}
+h2{
+    font-weight: initial;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 200px;
+}
