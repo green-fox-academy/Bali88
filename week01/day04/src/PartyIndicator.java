@@ -19,27 +19,23 @@ public class PartyIndicator {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many girls in the party?");
-        int userInput2 = scanner.nextInt();
-        int boys = userInput2;
+        int girls = scanner.nextInt();
+        System.out.println("Num of girls: " + girls);
         System.out.println("How many boys in the party?");
-        userInput2 = scanner.nextInt();
-        int girls = userInput2;
+        int boys = scanner.nextInt();
+        System.out.println("Num of boys: " + boys);
         int allPeople = girls + boys;
-        if (boys == girls && (allPeople > 20)){
+        System.out.println(allPeople);
+        if (boys == girls && allPeople > 20) {
             System.out.println("The party is excellent!");
-        }  else if (allPeople > 20 && (girls != boys)){
+        } else if (allPeople >= 20 && girls != boys && girls != 0) {
             System.out.println("Quite cool party!");
-        }  else if (allPeople < 20){
+        } else if (allPeople < 20 && allPeople != 0 && girls != 0) {
             System.out.println("Average party..");
-        } else if (girls == 0 ){
+        } else if (0 == girls) {
             System.out.println("Sausage party");
-        } else {
+        } else{
             System.out.println("No party!");
         }
-
-
-
-
-
     }
 }

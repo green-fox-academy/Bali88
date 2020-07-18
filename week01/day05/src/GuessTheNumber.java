@@ -10,20 +10,19 @@ public class GuessTheNumber {
 // The stried number is lower
 // You found the number: 8
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Please guess a number");
-    int userInput2 = scanner.nextInt();
+    int userInput2;
     int guess = 10;
-    boolean correctGuess = true;
-
-
-    if (guess > userInput2) {
-      System.out.println("The stored number is higher");
-    } else if (guess < userInput2) {
-      System.out.println("The stored number is lower");
-    } else {
-      System.out.println("You found the number: " + guess);
-    }
-
+    do {
+      System.out.println("Please guess a number");
+      userInput2 = scanner.nextInt();
+      if (guess > userInput2) {
+        System.out.println("The stored number is higher");
+      } else if (guess < userInput2) {
+        System.out.println("The stored number is lower");
+      } else {
+        System.out.println("You found the number: " + guess);
+      }
+    }while (guess != userInput2);
   }
 }
 
