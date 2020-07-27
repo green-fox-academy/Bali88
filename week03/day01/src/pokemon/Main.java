@@ -17,10 +17,13 @@ public class Main {
     Pokemon wildPokemon = new Pokemon("Oddish", "leaf", "water");
 
     // Which pokemon should Ash use?
-
-
-
-
+    Pokemon pokemon1 = new Pokemon("","","");
+    for (Pokemon pokemon: pokemonOfAsh) {
+      if (pokemon.isEffectiveAgainst(wildPokemon)) {
+        pokemon1 = pokemon;
+      }
+    }
+    System.out.println("I choose you " + pokemon1.name);
   }
 
   private static List<Pokemon> initializePokemons() {

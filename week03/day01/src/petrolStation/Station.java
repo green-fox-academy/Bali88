@@ -1,17 +1,10 @@
 package petrolStation;
 
 public class Station {
-  private int gasAmount;
-
-  public Station(int gasAmount) {
-    this.gasAmount = gasAmount;
-  }
-
-  public int getGasAmount() {
-    return gasAmount;
-  }
+  int gasAmount = 500;
 
   public void refill(Car car) {
-    gasAmount = car.getCapacity() - car.getGasAmount();
+    gasAmount -= car.capacity;
+    car.gasAmount += car.capacity;
   }
 }
