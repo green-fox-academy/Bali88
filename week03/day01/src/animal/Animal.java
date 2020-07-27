@@ -7,24 +7,16 @@ public class Animal {
   public Animal() {
   }
 
-  public void eat(){
+  public void eat() {
     hunger--;
   }
-  public void drink(){
+
+  public void drink() {
     thirst--;
   }
-  public void play(){
+
+  public void play() {
     hunger++;
     thirst++;
-  }
-
-  public static void main(String[] args) {
-    Animal animal1 = new Animal();
-    animal1.play();
-    animal1.play();
-    animal1.play();
-    System.out.println(animal1.thirst);
-    animal1.drink();
-    System.out.println(animal1.thirst);
   }
 }
